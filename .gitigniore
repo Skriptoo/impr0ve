@@ -1,0 +1,78 @@
+# ==============================================================================
+# Logs & System Files
+# ==============================================================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.DS_Store
+Thumbs.db
+
+# ==============================================================================
+# JetBrains / WebStorm
+# ==============================================================================
+# This hides WebStorm's project-specific settings, tasks, and shelf data
+.idea/
+*.suo
+*.ntvsca*
+*.njsproj
+*.sln
+*.sw?
+
+# ==============================================================================
+# Dependency Folders
+# ==============================================================================
+# Covers standard npm, yarn, and pnpm lockfile directories for both frontend and backend
+node_modules/
+/node_modules
+/frontend/node_modules
+/backend/node_modules
+jspm_packages/
+.pnpm-store/
+
+# ==============================================================================
+# Build & Distribution Outputs
+# ==============================================================================
+# Vite's default build folder
+dist/
+dist-ssr/
+# Standard Express/Node build outputs (if you compile TS backend to JS)
+build/
+out/
+*.local
+
+# ==============================================================================
+# TypeScript & Cache
+# ==============================================================================
+# Vite and other tools use these for performance caching
+.eslintcache
+.stylelintcache
+.node_repl_history
+.cache/
+.vite/
+.parcel-cache/
+*.tsbuildinfo
+
+# ==============================================================================
+# Environment Variables & Secrets (CRITICAL)
+# ==============================================================================
+# Never commit your database credentials, API keys, or JWT secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.local
+
+# Explicitly allow an example file so your team knows what keys to configure
+!.env.example
+
+# ==============================================================================
+# Testing & Coverage
+# ==============================================================================
+coverage/
+.nyc_output/
+html-report/
